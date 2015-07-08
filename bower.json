@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "authors": [
+    "nephridium <nephridium.labs@gmail.com>"
+  ],
+  "description": "test",
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.5"
+  }
+}
