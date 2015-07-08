@@ -1,0 +1,26 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-input/iron-input.html">
+
+<dom-module id="test-element">
+
+  <template>
+    <p>
+    This is a <strong>{{owner}}</strong>'s test-element.
+    </p>
+    <input is="iron-input" bind-value="{{owner}}"
+      placeholder="Your name here...">
+  </template>
+
+  <script>
+    Polymer({
+      is: "test-element",
+      properties: {
+        owner: {
+          type: String,
+          value: "Bob"
+        }
+      }
+    });
+  </script>
+
+</dom-module>
