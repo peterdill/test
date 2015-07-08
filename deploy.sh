@@ -7,9 +7,12 @@ if [ "$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')" != "gh-pages" ]; then
   exit 1
 fi
 
-echo Vulcanize
+echo "Vulcanize"
 vulcanize index.html > index.build.html
 mv index.build.html index.html
 
-echo Removing elements dir
-rm -rf elements
+#echo "Removing elements dir"
+#rm -rf elements
+
+echo "Commit changes"
+git commit -a
